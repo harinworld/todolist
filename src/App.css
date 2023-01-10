@@ -1,38 +1,62 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
+  background-color: #ddd;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.App article {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 3%;
+}
+.App article h1 {
+  margin: 0;
+}
+.App article p {
+  padding: 20px;
+  border-bottom: 1px dashed #000;
+  color: red;
+}
+.App article ul.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.App article ul.list li {
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+.App article ul.list li::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 100%;
+  background-color: #fff;
+  border: 1px solid #999;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.App article ul.list li.active {
+  color: #999;
+}
+.App article ul.list li.active::before {
+  background-color: rgb(31, 255, 11);
+}
+.App article div.write input {
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  font-size: 1.2rem;
+}
+.App article div.write input[type=submit] {
+  background-color: #000;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+* {
+  box-sizing: border-box;
+}/*# sourceMappingURL=App.css.map */
